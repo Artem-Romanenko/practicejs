@@ -281,3 +281,15 @@ function fib(num) {
 }
 
 console.log(fib(4));
+
+//Callback функція
+function learnJS(lang, callback) {
+    console.log(`Я вивчаю ${lang}`);
+    callback();     //<--а тут використовуємо функцію 'done'
+}
+
+function done() {
+    console.log('Я пройшов цей урок!');
+}
+
+learnJS('JavaScript', done);    //<--тут ми тільки передаємо функцію 'done' для подальшого використання
